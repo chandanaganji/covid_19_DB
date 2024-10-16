@@ -71,7 +71,7 @@ class ChartsData extends Component {
   renderLoadingView = () => (
     <div
       className="products-details-loader-container"
-      testid="timelinesDataLoader"
+      data-data-testid="timelinesDataLoader"
     >
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
@@ -154,7 +154,7 @@ class ChartsData extends Component {
       <div className="barchart-container">{this.barChart()}</div>
 
       <h1 className="charts-title">Spread Trends</h1>
-      <div testid="lineChartsContainer" className="barcharts-container">
+      <div data-testid="lineChartsContainer" className="barcharts-container">
         <div className="charts confirmed-background">
           {this.graph('confirmed', '#FF073A')}
         </div>
@@ -182,5 +182,4 @@ class ChartsData extends Component {
     return <div className="charts-container">{showAllData}</div>
   }
 }
-
 export default ChartsData

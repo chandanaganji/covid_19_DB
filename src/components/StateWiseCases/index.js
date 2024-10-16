@@ -1,12 +1,10 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
-
 import Header from '../Header'
 import Footer from '../Footer'
-
-
 import StateTotalData from '../StateTotalData'
 import ChartsData from '../ChartsData'
+import ShowEachDistrictData from '../ShowEachDistrictData/index'
 
 import './index.css'
 
@@ -214,7 +212,7 @@ class StateWiseCases extends Component {
 
   renderLoader = () => (
     <>
-      <div className="loader-container" testid="stateDetailsLoader">
+      <div className="loader-container" data-testid="stateDetailsLoader">
         <Loader type="ThreeDots" color="blue" height="50" width="50" />
       </div>
     </>
@@ -299,7 +297,7 @@ class StateWiseCases extends Component {
             <div className="district-data-ul-list">
               <ul
                 className="districts-container"
-                testid="topDistrictsUnorderedList"
+                data-testid="topDistrictsUnorderedList"
               >
                 {categoryData.map(each => (
                   <ShowEachDistrictData
@@ -312,7 +310,7 @@ class StateWiseCases extends Component {
             </div>
           </div>
 
-          <div className="graphs-data" testid="lineChartsContainer">
+          <div className="graphs-data" data-testid="lineChartsContainer">
             <ChartsData stateCode={stateCode} category={category} />
           </div>
         </div>
