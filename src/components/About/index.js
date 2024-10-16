@@ -2,8 +2,6 @@ import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import Footer from '../Footer'
-import FaqsList from '../FaqsList'
-import FactsList from '../FactsList'
 
 import './index.css'
 
@@ -20,7 +18,7 @@ class About extends Component {
 
   renderLoader = () => (
     <>
-      <div data-data-testid="aboutRouteLoader" className="loader-container">
+      <div className="loader-container" testid="aboutRouteLoader">
         <Loader type="ThreeDots" color="blue" height="50" width="50" />
       </div>
     </>
@@ -62,7 +60,7 @@ class About extends Component {
     const {faqData, factsData} = this.state
     return (
       <>
-        <ul data-testid="faqsUnorderedList" className="factlist">
+        <ul testid="faqsUnorderedList" className="factlist">
           {faqData.map(each => (
             <FaqsList
               key={each.qno}

@@ -1,3 +1,4 @@
+
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
@@ -8,7 +9,7 @@ import './index.css'
 class Vaccination extends Component {
   renderLoader = () => (
     <>
-      <div className="loader-container" data-testid="aboutRouteLoader">
+      <div className="loader-container" testid="aboutRouteLoader">
         <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
       </div>
     </>
