@@ -10,7 +10,7 @@ dependencies:
   msw: 0.35.0
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
-  react-icons: 4.3.1_react@17.0.1
+  react-icons: 4.0.0_react@17.0.1
   react-loader-spinner: 4.0.0_react-dom@17.0.1+react@17.0.1
   react-router-dom: 5.3.0_react@17.0.1
   react-select: 4.3.1_react-dom@17.0.1+react@17.0.1
@@ -12734,14 +12734,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
-  /react-icons/4.3.1_react@17.0.1:
+  /react-icons/4.0.0_react@17.0.1:
     dependencies:
       react: 17.0.1
     dev: false
     peerDependencies:
       react: '*'
     resolution:
-      integrity: sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==
+      integrity: sha512-HNS9Bsi73SImFZjwBAuaDIPfSqjLzDNZAN3PSjhZ7+7XJSCjkgFuzaMnyZetZXyawKwyoIPwmvGMSeFsEfsCPg==
   /react-input-autosize/3.0.0_react@17.0.1:
     dependencies:
       prop-types: 15.8.1
@@ -15875,7 +15875,7 @@ specifiers:
   prettier: 2.2.1
   react: 17.0.1
   react-dom: 17.0.1
-  react-icons: 4.3.1
+  react-icons: 4.0.0
   react-loader-spinner: 4.0.0
   react-router-dom: 5.3.0
   react-scripts: 4.0.3
